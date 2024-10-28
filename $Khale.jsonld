@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "$Khale"
+    },
+    "motivations": {
+      "@value": "Cardano provides us with a unique opportunity to be directly involved in the evolution of society. For the first time in history, 'We, the people' have access to the infrastructure, tools, resources, manpower, ideas and expertise required to redesign and rebuild the programs and services required for a fully functioning and corruption free existence.\n\nI believe that it is the responsibility of every community member to actively participate in governance and I look forward to the multitude of opinions and views that that will one day fuel the evolution of Cardano, its ecosystem and humanity.\n\nHowever, I understand that there are many who may currently feel that they lack either the technical expertise or adequate time (or both) to properly research and weigh in on every governance proposal submitted so, until we are able to achieve community-wide participation in governance, DReps will be necessary for the facilitation of governance representation."
+    },
+    "objectives": {
+      "@value": "My objective is to help maintain the integrity, growth, and longevity of the Cardano ecosystem with a focus on sustainability, transparency, and fiscal responsibility."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9qnmvclxsc6xmks5cncl9ee4d3zf00mvet9mh77v0gr7sslrsn43r6ymgervsznqhv45cx34h537vdy66dasn0s7ygsqtch7e"
+    },
+    "qualifications": {
+      "@value": "Over 35 years, as a self-employed sole proprietor, I have cultivated a vast and varied array of skills and experience. My formal training is that of a programmer-analyst with a focus on business systems, but my skills extend well beyond that area.\n\nBusiness Development and Administration:\n• Human resources and conflict resolution\n• Inventory and supply chain management\n• Accounting and financial management\n• Advertising and marketing\n• Client assessment and interpretation\n• Retail operations\n\nTechnical Skills:\n• Hardware and software maintenance\n• Computer and electronics repair\n• Dynamic and static web development (focusing on ColdFusion and SQL)\n• Analytics and SEO\n• Networking\n• Training and consulting\n• Project design, development, and management\n\nBlockchain Experience:\nI have been involved in the blockchain space since approximately 2015, participating in various aspects including:\n• Mining/Staking\n• Consulting and training\n• User onboarding\n• Ecosystem participation and research"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/robbdenison"
+        }
+      }
+    ]
+  }
+}
