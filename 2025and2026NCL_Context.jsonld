@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "While I am willing to reluctantly agree to the Net Change Limit proposed for 2025, it is at the upper boundary of what I'd currently accept as a yearly spending cap.\n\nBeyond the 2025 amount, I am opposed to the remainder of the proposal. In my view, it is short sighted and irresponsible to attempt to set an amount for 2026. None of us have any idea what is going to happen from one week to the next, so trying to anticipate the state of affairs in the blockchain ecosystem in general and Cardano's state of development and adoption specifically, 9 months from now and setting a 2026 NCL, is an exercise in futility.\n\nI am willing to agree to this proposal for three specific reasons.\n\n1) The knowledge that I will oppose any budget that allocates more than 75% of the NCL to the 2025 budget with the final 25% remaining for unforeseen opportunities and emergency reserves.\n2) The ability to change the NCL once its minimum timeframe has elapsed, which will occur before a 2026 NCL is required.\n3) Lack of any other valid option.\n\nWith that being said, I am voting YES to this proposal based solely off of the amount proposed for 2025; however, if a more appropriate proposal is submitted before this proposal's end date, I will happily reevaluate my position and assign my support to the most feasible and fiscally responsible proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
