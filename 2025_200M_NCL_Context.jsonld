@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Given the current state of the Cardano ecosystem, I believe the proposed NCL amount is a far more practical option compared to previous iterations presented thus far.\n\nWhile a 200M NCL leaves little room for anything beyond core research, development, and operations in 2025, I am convinced this focus is precisely where our attention should be in the short to medium term.\n\nAs a community now fully responsible for the direction, scale, and pace of the ecosystem’s expansion and evolution, we must ensure a robust and comprehensive framework of policies, procedures, infrastructure, and auditing is in place before allocating significant resources to areas we are currently unprepared or unable to support.\n\nThis approach should be a priority across all areas of the ecosystem but is particularly critical for administration, governance, and funding, which currently lack substance, quality, and transparency."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
