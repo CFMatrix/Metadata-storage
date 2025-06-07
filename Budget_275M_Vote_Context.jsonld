@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "DRep Vote Rationale: NO on the 2025 Cardano Ecosystem Budget Proposal\n\nAfter a thorough review of the proposal and supporting documentation—including previous submissions and public statements from IntersectMBO—I have decided to vote NO on this Budget Info Action. My decision is based on both practical and fundamental concerns.\n\n1. Budget Size Exceeds Responsible Limits\n\nThe total budget request of 275,269,340 ADA exceeds the maximum amount I am willing to allocate for the 2025 budget by over 75 million ADA. In my view, this level of spending is not justified by the current needs or the demonstrated capacity for effective, transparent delivery. Fiscal responsibility is paramount, especially when drawing from the Cardano Treasury, and this proposal does not meet that standard.\n\n2. Governance and Process Concerns\n  A. Lack of Pre-Vote Compliance Checks\n\n  - No administrative or compliance vetting was performed by IntersectMBO or its committees before DRep voting. All 194 proposals were left for DReps to review, with no assurance that proposals were KYC/KYB compliant or met other eligibility criteria.\n\n  - This means DReps could approve proposals that are later blocked by Intersect at the administrative stage, wasting community effort and undermining the legitimacy of the DRep vote.\n\nB. Centralization and Administrative Discretion\n\n  - Only proposals that named Intersect as their Administrator were included in this budget action. Proposals that chose to operate independently or through other means were excluded, regardless of merit or community support.\n\n  - Intersect reserves the right to decline or withdraw as Administrator after DRep approval based on post-vote compliance checks, with no clear appeals process. This creates a risk of centralized, discretionary veto power over community-approved proposals.\n\n3. Inclusivity vs. Member-Centric Practice\n\n  - IntersectMBO’s stated mission is to bring together the entire Cardano community, including non-members. However, in practice, their approach privileges entities and individuals who are aligned with or pay for Intersect membership and services.\n\n  - The proposal requests 15.75M ADA for Intersect’s own operations as a “member-based organization,” funded from the public treasury rather than membership dues.\n\n  - This model grants Intersect the benefits of a private administrator—control, funding, and authority—without the risks, competition, or accountability expected of a private business, especially when using public funds.\n\n4. Transparency and Accountability Gaps\n\n  - No clear, published criteria for compliance or due diligence are provided before DRep voting, nor is there a transparent process for proposers to appeal declined administration decisions.\n\n  - While smart contract escrow and multi-signature oversight are positive steps, the ultimate administrative authority remains centralized with Intersect.\n\nConclusion\n\nWhile I appreciate the effort to coordinate a community-driven budget process, this proposal falls short in several critical areas:\n\n  - It exceeds a fiscally responsible budget limit,\n  - Lacks adequate pre-vote compliance screening,\n  - Concentrates administrative power and funding within a single, member-centric organization,\n  - And fails to provide the transparency and accountability necessary for true decentralized governance.\n\nFor these reasons, I cannot support this Budget Info Action and have cast my vote as NO. I encourage the community and IntersectMBO to address these concerns in future funding cycles to ensure Cardano’s governance remains open, inclusive, and accountable to all stakeholders."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
