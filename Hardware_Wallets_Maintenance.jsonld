@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I voted YES on the Treasury Withdrawal titled Hardware Wallets Maintenance (₳424,800), which ensures the continued upkeep of Ledger, Trezor, and Keystone hardware wallet integrations within the Cardano ecosystem.\n\nThis proposal is critical to Cardano’s security infrastructure and user confidence in self-custody: without it, wallet users may not be able to sign transactions or interact with core protocol features in upcoming Cardano releases.\n\nVacuumlabs, the vendor, has maintained these integrations since 2018 and remains the lead engineering team behind the cardano-hw-cli and firmware adaptations across both Ledger and Trezor.\n\nThe proposal is administered under a formal legal contract through the CDH, using Treasury Reserve Smart Contracts (TRSC) developed by Sundae Labs. Fund disbursement is milestone- and metadata-gated and coordinated via an external 3rd party assurer and community-visible dashboards.\n\nThis funding ensures hardware wallet users remain compatible with new roadmap features (e.g. Babel Fees, Nested Transactions, CIP-68), and that certified audits (required by Ledger) are performed.\n\nI affirm this proposal’s alignment with the 2025 Ecosystem Budget Info Action, its Ekklesia vote threshold of 3.43B ADA, and strongly support this critical infrastructure work."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
