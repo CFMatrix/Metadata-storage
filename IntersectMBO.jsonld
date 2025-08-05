@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting NO on this proposal. The decision is based on budget scale, detail, operational transparency, and the type of oversight presented in the proposal and relevant supporting links.\n\n1. Size of Funding Request and Budget Specificity\nThe proposal requests ₳15,750,000 for a 12-month period to fund Intersect’s role as an Administrator and ecosystem MBO.\n\nThe written proposal refers readers to external supporting CSV and PDF files for operational budget detail, rather than providing this information in the main governance action text.\n\nAccording to information in those supporting files, major expenses are attributed to personnel (approx. 45 roles at an average of $100,000 each), with some line items for board compensation and “Board Services,” but job roles, responsibility mapping, and cost justifications are not detailed in the proposal itself.\n\n2. Transparency and Oversight\nThe proposal describes oversight via an off-chain legal contract, the Cardano Development Holdings entity, and milestone tracking with third-party assurer review.\n\nIt is not clear from the proposal documentation how compensation, operational decisions, or board activities are communicated to or approved by the broader Cardano community, or how board members are selected, compensated, or held accountable.\n\n3. Scope of Organizational Role and Treasury Funding\nIntersect’s remit as described includes core node repo stewardship, upgrade coordination, committee facilitation, and Administrator role execution.\n\nThe budget requested is significantly larger than for most other Cardano proposals reviewed, including those funding technical or development initiatives.\n\nThe proposal does not specify contingency plans if Intersect is not funded.\n\nConclusion:\n\nBased on the information provided, I do not find the current proposal demonstrates the necessary transparency or detailed justification for a ₳15,750,000 treasury withdrawal. The operational scope, budget, and oversight mechanisms as documented do not provide sufficient clarity for this scale of community funding. Additional clarity on organizational structure, budgeting process, and community accountability is needed before considering future support."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
