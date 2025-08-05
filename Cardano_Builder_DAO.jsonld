@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I recommend voting YES on this proposal to fund the Cardano Builder DAO administered by Intersect with ₳12,000,000. This funding addresses a crucial gap in the Cardano ecosystem by providing dedicated, sustainable financial backing and strategic support specifically for live, user-facing dApps driving meaningful on-chain activity, TVL, and ecosystem engagement.\n\nThe project leverages proven governance infrastructure built on Clarity and Agora smart contracts, enabling transparent, member-driven decision-making and treasury management. The DAO structure complements Project Catalyst by focusing on the scale-up phase of projects rather than early-stage startup innovation, thereby ensuring both innovation and growth receive targeted support.\n\nRobust treasury administration, including multi-party authorization and independent oversight, provides confidence in governance and fund security. Planned KPIs and milestone monitoring will permit clear tracking of projects’ impact and ROI.\n\nSupporting application-layer projects is vital to growing Cardano’s user base, increasing real usage metrics, and driving the ecosystem towards mass adoption. This DAO proposes a scalable, community-aligned funding model essential for long-term ecosystem health and resilience."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
