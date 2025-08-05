@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This treasury withdrawal proposal aims to develop a zero-knowledge (ZK) bridge for Cardano to enable modular, trustless interoperability with other blockchains via a zk-proof-based communication protocol. While interoperability is a critical area for Cardano, this proposal currently focuses on a testnet proof-of-concept limited to the Cardano side, without specifying targeted partner chains or a clear path to mainnet deployment.\n\nKey concerns influencing this no vote include:\n\n  Lack of Concrete Scope and Deliverables: The proposal provides high-level architectural goals but lacks detailed implementation plans, timelines, and defined milestones that concretely demonstrate progress towards production-ready, mainnet-capable infrastructure.\n\n  Unclear Integration and Differentiation: There is insufficient engagement with or clear distinction from other ongoing Cardano initiatives, such as Hydra,   zkRollup efforts by zkFold, Tweag's Layer 2 tooling, Midgard, and other ZK proof research. This raises risks of redundancy or fragmented ecosystem efforts.\n\n  Budget Concerns: The ₳700,000 request is substantial for a preliminary, testnet-only PoC lacking demonstrated immediate ecosystem impact or user-facing integration. The proposal indicates reliance on further grant funding beyond this phase, creating uncertainty about scope control and deliverable   accountability.\n\n  Open-Ended Development and Audit Risks: Essential activities such as smart contract audits, mainnet readiness verification, and security assessments are   explicitly out of scope, implying significant additional future costs with no clarity on funding or delivery guarantees.\n\n  Vendor Experience Relative to Proposal Needs: Although the vendor demonstrates strong cryptographic and zero-knowledge expertise, their recent Cardano-specific deployment experience on cross-chain ZK bridges is limited.\n\n  Governance and Oversight Good Practices: The proposal meets governance requirements with clear contract management, milestone tracking, on-chain metadata, and multi-party treasury oversight, which reduces administrative risks but does not fully compensate for the substantial strategic and technical uncertainties.\n\nGiven these factors, this proposal’s risks and ambiguities outweigh the potential benefits at this stage. \n\nA vote of no is warranted pending a future, more detailed, and tightly scoped proposal with clearer production plans, integration strategies, phased funding, and audit milestones."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
