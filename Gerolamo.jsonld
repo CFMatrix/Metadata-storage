@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote YES on the Gerolamo treasury withdrawal proposal for ₳578,571 to support the development of a fully functional Cardano node in Typescript, capable of running in-browser. \n\nThis capability fills a vital infrastructure gap in the Cardano ecosystem, greatly enhancing developer accessibility and enabling scalable, decentralized applications to function independently of centralized backends. Gerolamo allows dApps and wallets to trustlessly access ledger data from within the browser, reducing reliance on hosted nodes and making light clients more runtime- and user-friendly.\n\nThe proposal is built around milestone-linked disbursements handled under a legally binding contract with external milestone assurance. Funds will be distributed through audited treasury smart contracts subject to community verification, with metadata and governance artifacts made public. \n\nGiven the initiative’s unique value to ecosystem scalability and its alignment with long-term decentralization goals, this proposal warrants approval."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
