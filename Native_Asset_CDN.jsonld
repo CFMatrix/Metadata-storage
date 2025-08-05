@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting NO on this proposal, as it does not meet the standards for open, sustainable, and community-owned infrastructure that Cardano’s treasury should prioritize.\n\nWhile content delivery for native asset metadata and media is a legitimate need, this solution is centralized, proprietary, and insufficiently transparent regarding both budget and long-term sustainability. Funding a single vendor to provide a non-critical CDN on a closed-source, commercial basis risks lock-in, undermines decentralization, and sets a precedent for treasury-funded private SaaS subsidies.\n\nThe proposal’s claimed cost savings and ROI are not supported by detailed technical or financial disclosures, and the reliance on a free period followed by uncertain pricing leaves projects exposed if future funding is denied or terms change. Additionally, current ecosystem adoption is limited, and similar functionality can be achieved with more open and competitively priced alternatives.\n\nI encourage resubmission of a leaner, open-source, and community-governed proposal, developed transparently and collaboratively, before treasury support is reconsidered."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
