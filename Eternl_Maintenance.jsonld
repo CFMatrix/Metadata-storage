@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote YES on the treasury withdrawal proposal for ₳583,000 to maintain and sustain Eternl, a core user wallet infrastructure for Cardano. \n\nEternl has demonstrated consistent operational and technical capability since 2021, supporting a wide range of users across platforms.\n\nThe proposal seeks operational funding necessary to cover mature, steady-state maintenance costs, critical for ensuring ongoing security, reliability, and compatibility within the Cardano ecosystem. Maintaining a high-quality wallet infrastructure facilitates user retention, network participation, and developer integration, which are vital for long-term ecosystem health.\n\nThe governance framework ensures accountability and transparency via a legally binding contract with clear milestones, third-party milestone assurance, and audited on-chain treasury tooling managed under a multisig and Oversight Committee to reduce risks of fund mismanagement.\n\nThe requested budget is consistent with industry norms for sustained maintenance of essential software services. Approval will preserve a key gateway for Cardano's users and developers, supporting continued platform growth and adoption."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
