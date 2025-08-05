@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I voted YES on the Treasury Withdrawal titled Lucid Evolution Maintenance (₳130,903) based on its vital role supporting frontend developers across the Cardano dApp ecosystem.\n\nLucid is the most widely adopted JavaScript/TypeScript SDK for building with Cardano smart contracts — providing capabilities like transaction assembly, metadata serialization, script formatting, and wallet communication.\n\nContinued evolution of Lucid ensures smooth dApp operations and adoption of new features like Plutus V3 and Babel fees. This keeps developer experience competitive with other chains.\n\nAnastasia Labs, the vendor, has a strong delivery track record, deep ecosystem contributions, and an open governance stance. They maintain the Lucid repo and over 50 other Cardano infrastructure packages.\n\nFunds are disbursed constitutionally: held in smart contract escrow, guarded by an oversight committee (Sundae Labs, CF, NMKR, etc.), validated via milestones, and publicly transparent via IPFS metadata and on-chain multisig workflows.\n\nGiven Lucid’s prominence and the modest budget request, this proposal is a high-leverage investment in the tooling required to expand Cardano’s user and developer base."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
