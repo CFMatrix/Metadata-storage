@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote YES on the treasury withdrawal for ₳266,667 to support Cexplorer.io, a critical and high-usage blockchain explorer providing Cardano developers, stake pool operators, and the broader community with real-time, detailed blockchain insights. The proposal's continuous maintenance and planned enhancements ensure that Cexplorer remains reliable, scalable, and equipped with advanced features tailored to ecosystem needs.\n\nThe vendor team brings solid, proven experience in backend and frontend blockchain infrastructure with specific Cardano knowledge and architectural expertise. The contract management embeds clear milestones and acceptance criteria, with third-party milestone assurors and community transparency supported on-chain via Sundae Labs treasury smart contracts.\n\nThe budget request is reasonable for operational continuity and planned expansions, with a strong value proposition in maintaining critical infrastructure that underpins ecosystem transparency and developer productivity. Cexplorer.io’s position as a trusted platform with significant monthly user engagement highlights its importance.\n\nThe governance framework around contract delivery, treasury management, and oversight committee controls adequately mitigate risks related to execution and fund management.\n\nApproval of this proposal will sustain and grow a foundational tool that directly benefits Cardano’s developer experience, staking community, and research efforts — integral to Cardano’s ecosystem health and growth."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
