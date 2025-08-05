@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I voted YES on the Treasury Withdrawal titled Pallas – Sustaining Critical Rust Tooling for Cardano requesting ₳220,914.\n\nPallas is a critical piece of Rust-based infrastructure, used daily by protocol developers, explorers, wallet libraries, and tools like Aiken, Lucid, Mithril, and Amaru. This proposal sustains the library through dedicated engineering time and smart-contract-governed payments.\n\nTxPipe is the original Pallas maintainer and has proven delivery capacity through Catalyst and open-source history. Their GitHub activity and engagement with the broader Cardano contributor community earn high marks on transparency and reliability.\n\nFunding mechanisms use the TRSC smart contract framework with full moderated delivery assurance, milestone tracking, and public dashboards. All data is verified on-chain using metadata hashes and IPFS anchors.\n\nGiven Pallas’s widespread usage, developer importance, and vulnerability to protocol drift without support, I fully support this constitutional treasury withdrawal for a modest, proportionate amount. Sustaining this public good is aligned with Cardano’s roadmap and ecosystem health."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
