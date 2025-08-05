@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote YES to the treasury withdrawal proposal for ₳657,692 in support of the Scalus DApps Development Platform. \n\nThis platform aims to streamline and unify the Cardano smart contract and DApp development experience through Scala 3, offering a consistent tooling ecosystem that covers the full development lifecycle—from setup to deployment.\n\nGiven the steep learning curve and fragmented toolsets currently discouraging developer onboarding, Scalus addresses a significant bottleneck by bridging traditional Scala/Java/Kotlin developer expertise with the Cardano ecosystem’s needs. Such unification has the potential to reduce time-to-market, improve code safety, and tap into a wider talent pool — all critical factors for Cardano's scaling and enterprise adoption goals.\n\nThe vendor brings relevant domain expertise as a former IOG engineer familiar with Cardano’s FP and blockchain ecosystem, enhancing confidence in delivery. The proposal includes a well-defined contractual plan with milestones, third-party milestone acceptance, and robust governance and treasury oversight, ensuring risk is managed and accountability ensured.\n\nThe budget aligns reasonably with the scope of work for betting on a scalable development platform aimed at improving ecosystem inclusivity and productivity. Transparency measures and governance compliance are fully in place.\n\nApproval will support expanding Cardano’s developer base through a production-ready, unified development platform designed for professional and business teams, thus fostering innovation and adoption."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
