@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote YES on the ₳243,478 treasury withdrawal for MLabs’ ongoing maintenance and enhancement of the Plutarch smart contract eDSL. \n\nPlutarch serves a foundational role in the Cardano ecosystem as a trusted, production-ready Haskell-based tool for writing secure, efficient smart contracts. This maintenance-focused proposal responds directly to the need for sustained investment in Cardano core tooling — including patching, updates for hard forks, feature improvements, and user-requested enhancements.\n\nThe vendor has a strong stewardship record for Plutarch and related infrastructures. The proposal is structured around milestone and metadata-based delivery, subject to third-party assurance, with funding routed through open, on-chain governance tooling. This proposal offers a high return in developer productivity, tooling quality, and protocol readiness relative to the cost and fits within the 2025 budget plan. \n\nMaintaining Plutarch improves long-term resilience and helps retain developers within the ecosystem."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
