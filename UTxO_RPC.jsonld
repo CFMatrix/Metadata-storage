@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I voted YES on the Treasury Withdrawal titled UTxO RPC: Sustaining Cardano Blockchain Integration requesting ₳220,914 based on its strategic importance, developer adoption, constitutional compliance, and cost effectiveness.\n\nUTxO RPC provides crucial infrastructure for standardizing access to Cardano’s UTxO model using modern RPC endpoints, SDKs, and a shared schema language. This removes major onboarding and integration hurdles for both developers already building on Cardano (e.g. Lace, Mesh, Amaru) and those new to the ecosystem.\n\nThe proposal is well-scoped (0.625 FTEs) and continues TxPipe’s stewardship of one of the most pivotal light-client/public-access gateways in the Rust tooling landscape.\n\nI also confirm administrative compliance and financial oversight using constitutional smart contract infrastructure (TRSC/PSSC), audited by trusted third parties (MLabs, Sundae Labs, TxPipe). All milestones are contract-governed, metadata-linked, and transparently enforced. This is especially fitting given that TxPipe itself contributed to auditing the underlying multi-signature framework.\n\nUTxO RPC is a powerful ecosystem enabler and demonstrates the “invisible infrastructure” layer that modern blockchain platforms must deliver. I support this proposal as a constitutional Treasury action and recommend approval."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
