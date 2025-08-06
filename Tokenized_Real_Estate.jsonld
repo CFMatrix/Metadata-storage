@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting NO on this proposal to fund \"High-yield RWA Asset for Cardano Tokenized Real Estate\" with ₳3,000,000.\n\nThe proposal presents an exciting vision: onboarding a tested, tokenized US home equity protocol and a real estate-backed token (HausCoin) onto Cardano. However, this experiment comes at a high cost with many unresolved questions. The approach faces significant US/EU regulatory headwinds, must prove legal clarity for tokenized home equity, and lacks immediate, demonstrable ecosystem benefit. The business case is compelling but primarily future-focused, and Cardano’s treasury would assume extensive technical, regulatory, and adoption risk that should be managed and validated incrementally instead.\n\nWhile I support real-world asset innovation, more risk-managed, modular, and transparent approaches are warranted before deploying treasury-scale funding for high-risk, long-horizon ventures. For these reasons, I cannot support the proposal as written."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
