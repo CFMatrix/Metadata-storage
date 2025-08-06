@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "After a detailed review of the MLabs Research proposal titled “Tooling for Elliptical Curves – GrumpleStiltSkin”, I have voted YES based on the following considerations aligned with Cardano’s governance objectives and ecosystem priorities:\n\nCritical Infrastructure for ZK and Cryptography: \nThis proposal addresses a significant gap in Cardano’s cryptographic tooling by enabling flexible, on-chain zero-knowledge proof verification over customizable elliptic curves. This capability is essential for expanding Cardano’s privacy, scalability, and advanced application potential.\n\nDeveloper Usability and Security: \nBy delivering a flexible and developer-friendly YTxP-based interface in Plutarch, the project reduces the complexity and specialized knowledge required for application developers to leverage zero-knowledge proofs safely and effectively. This promotes broader adoption and reduces duplicated effort and security risks.\n\nAlignment with Cardano Roadmap and Ecosystem Needs: \nThe tooling directly supports Cardano’s ambitions in zkApps and cryptographic sophistication, complementing ongoing research and protocol development efforts. It strengthens the foundation for future decentralized applications requiring advanced cryptography.\n\nReasonable and Transparent Scope: \nThe proposed budget of ₳104,347 for 600 hours of focused development, including project management and quality assurance, is modest and appropriate for the scope of work and specialized expertise required.\n\nStrong Track Record of Vendor: \nMLabs has demonstrated substantial commitment and expertise within the Cardano ecosystem, especially in Plutus, Plutarch, and advanced cryptographic research, providing confidence in timely and quality delivery.\n\nMilestone-Based Disbursement & Oversight: \nFunding will be managed through milestone-based payments enforced by smart contracts and overseen by Intersect with third-party assurance, ensuring accountability and transparency.\n\nThis proposal delivers clear technical value that directly benefits developers, applications, and the broader Cardano platform, sustaining Cardano’s leadership in blockchain innovation and cryptographic capabilities.\n\nFor these reasons, I endorse this proposal and encourage community support to enable its successful execution."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
